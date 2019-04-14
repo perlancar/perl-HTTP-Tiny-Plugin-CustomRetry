@@ -23,7 +23,7 @@ sub after_request {
         $pkg->new(%{$r->{config}{strategy_options} // {}});
     };
 
-    my ($ht, $method, $url, $options) = @{ $r->{argv} };
+    my ($http, $method, $url, $options) = @{ $r->{argv} };
 
     my $fail;
     if (ref $r->{config}{retry_if} eq 'Regexp') {
