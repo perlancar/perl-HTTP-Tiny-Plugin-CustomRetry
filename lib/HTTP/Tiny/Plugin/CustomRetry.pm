@@ -72,6 +72,9 @@ sub after_request {
 
 =head1 DESCRIPTION
 
+B<DEPRECATION NOTICE:> This plugin is now deprecated, in favor of
+L<HTTP::Tiny::Plugin::Retry> which will merge its features.
+
 This plugin retries failed response using one of available backoff strategy in
 C<Algorithm::Backoff::*> (e.g. L<Algorithm::Backoff::Exponential>).
 
@@ -102,3 +105,5 @@ will be called with arguments: C<< ($self, $response) >>.
 =head1 SEE ALSO
 
 L<HTTP::Tiny::Plugin>
+
+L<HTTP::Tiny::Plugin::Retry>.
