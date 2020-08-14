@@ -1,3 +1,8 @@
+0.002   2020-08-14  Released-By: PERLANCAR; Urgency: medium
+
+	- Deprecate in favor of HTTP::Tiny::Plugin::Retry.
+
+
 0.001    2019-04-13  Released-By: PERLANCAR
 
          - First release.
